@@ -1,0 +1,105 @@
+/*resetar as configurações do css*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/*alterando o body*/
+body {
+	height: 100vh;
+	background-color: #3a3939;
+}
+
+/*alterando o titulo do cabeçalho*/
+.titulo {
+	color: #F90065;
+	text-align: center;
+	font-family: 'Odibee Sans', cursive;
+	font-size: 30px;
+	background-color: #242222;
+	padding: 10px;
+	border-bottom: 2px solid #F90065;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, .7);
+	display: auto;
+}
+
+/*alterando o css do botão*/
+.botaoResetar {
+	width: 200px;
+	color: #F90065;
+	font-family: 'Roboto', sans-serif;
+	padding: 5px;
+	background-color: #242222; 
+}
+
+/*alterando o tamanho e css do jogo*/
+.jogoMemoria {
+	width: 650px;
+	height: 550px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	perspective: 1000px;
+}
+
+/*alterando as cartas do jogo*/
+.cartaMemoria {
+	width: calc(25% - 10px);
+	height: calc(33.333% - 10px);
+	margin: 5px;
+	margin-top: 10px;
+	position: relative;
+	transform: scale(1);
+	transform-style: preserve-3d;
+	transition: transform .5s;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+	border-radius: 5px;
+}
+
+/*alterando o css de quando a carta e virada*/
+.cartaMemoria:active {
+	transform: scale(.97);
+	transition: transform .2s;
+}
+
+/*mostrando como a carta é para virar*/
+.cartaMemoria.flip {
+	transform: rotateY(180deg);
+}
+
+/*alterando o css da parte de frente e de tras das cartas e imagem*/
+.cartaFrente,
+.cartaAtras {
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	position: absolute;
+	border-radius: 5px;
+	background: #242222;
+	backface-visibility: hidden;
+}
+
+/*mostrando como a carta é para virar, mas agora, para voltar a posição original, quando as cartas não coencidem*/
+.cartaFrente {
+	transform: rotateY(180deg);
+}
+
+/*criando a sombra do rodapé*/
+.sombraRodape {
+	border-top: 1px solid rgba(0, 0, 0, .3);
+}
+
+/*alterando o css e tamanho do rodapé*/
+.rodape {
+	color: #F90065;
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	background-color: #242222;
+	padding: 10px;
+	border-top: 54px solid black;
+	border-top: 2px solid #F90065;
+	display: auto;
+	position: relative;
+}

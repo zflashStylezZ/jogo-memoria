@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<!-- A tag <html> serve para indicar somente ao navegador que estamos iniciando um arquivo HTML -->
+<html>
+
+<!--O <head> serve para inserir links, a gente também pode inserir API's, conseguimos adicionar bibliotecas ao nosso código, e inserir arquivos de configuração, exemplo: CSS -->
+<head>
+  <!--O charset serve para vocês decodificarem alguns caracteres sem formatação, arrumando alguns tipos de pontuação e etc-->
+  <meta charset="UTF-8">
+
+  <!-- Titulo da aba -->
+  <title>Jogo da Memória</title>
+
+  <!-- Definindo o icone -->
+  <link rel="shortcut icon" href="icon.png">
+
+  <!--Aqui a gente tá conectando no Google Fonts, por meio do link-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <!-- Como eu já estou conectado na api do Google Fonts, eu pego a fonte Odibee Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+  
+
+  <!--Como eu já estou conectado na api do Google Fonts, eu pego a fonte Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Referindo-se ao arquivo do css/style -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<!--Aqui é onde a gente vai colocar toda a nossa parte gráfica, visual, Javascript, outras linguagens (Caso for optado pelo Desenvolvedor), e tudo aquilo que literalmente irá aparecer para o usuário-->
+<body>
+
+  <!-- Titulo que está no cabeçalho -->
+  <div class=titulo>
+    <h1>Jogo Da Memória</h1>
+  </div>
+
+  <!-- Definindo seção do jogo, onde aqui dentro vai estar as cartas -->
+	<section class="jogoMemoria">
+
+    <!-- Cada div dessa corresponde a uma carta -->
+    <!-- Há 2 cartas de cada tipo/imagem iguais -->
+    <!-- No total são 12 cartas -->
+	  <div class="cartaMemoria" data-framework="react">
+	    <img class="cartaFrente" src="img/react.svg" alt="Face da Carta">
+	    <img class="cartaAtras" src="img/js-badge.svg" alt="Verso da Carta">
+	  </div>
+
+
+	  <div class="cartaMemoria" data-framework="react">
+	    <img class="cartaFrente" src="img/react.svg" alt="Face da Carta">
+	    <img class="cartaAtras" src="img/js-badge.svg" alt="Verso da Carta">
+	  </div>
+
+
+  	<div class="cartaMemoria" data-framework="angular">
+   		<img class="cartaFrente" src="img/angular.svg" alt="Face da Carta">
+    	<img class="cartaAtras" src="img/js-badge.svg" alt="Verso da Carta">
+  	</div>
+
+
+  	<div class="cartaMemoria" data-framework="angular">
+    	<img class="cartaFrente" src="img/angular.svg" alt="Face da Carta">
+    	<img class="cartaAtras" src="img/js-badge.svg" alt="Verso da Carta">
+  	</div>
+
+
+  	<div class="cartaMemoria" data-framework="ember">
+    	<img class="cartaFrente" src="img/ember.svg" alt="Face da Carta">
+    	<img class="cartaAtras" src="img/js-badge.svg" alt="Verso da Carta">
+  	</div>
+
+
+  	<div class="cartaMemoria" data-framework="ember">
+    	<img class="cartaFrente" src="img/ember.svg" alt="Face da Carta">
+    	<img class="cartaAtras" src="img/js-badge.svg" alt="Verso da Carta">
+  	</div>
+
+
+  	<div class="cartaMemoria" data-framework="vue">
+    	<img class="cartaFrente" src="img/vue.svg" alt="Face da Carta">
+    	<img class="cartaAtras" src="img/js-badge.svg" alt="Verso da Carta">
+  	</div>
+
+
+  	<div class="cartaMemoria" data-framework="vue">
+    	<img class="cartaFrente" src="img/vue.svg" alt="Face da Carta">
+    	<img class="cartaAtras" src="img/js-badge.svg" alt="Verso da Carta">
+  	</div>
+
+
+	 <div class="cartaMemoria" data-framework="backbone">
+		  <img class="cartaFrente" src="img/backbone.svg" Face da Carta="Backbone">
+		  <img class="cartaAtras" src="img/js-badge.svg" alt="Verso da Carta">
+		</div>
+
+
+		<div class="cartaMemoria" data-framework="backbone">
+		    <img class="cartaFrente" src="img/backbone.svg" Face da Carta="Backbone">
+		    <img class="cartaAtras" src="img/js-badge.svg" alt="Verso da Carta">
+		</div>
+
+
+  	<div class="cartaMemoria" data-framework="aurelia">
+    	<img class="cartaFrente" src="img/aurelia.svg" alt="Face da Carta">
+    	<img class="cartaAtras" src="img/js-badge.svg" alt="Verso da Carta">
+  	</div>
+
+
+  	<div class="cartaMemoria" data-framework="aurelia">
+    	<img class="cartaFrente" src="img/aurelia.svg" alt="Face da Carta">
+    	<img class="cartaAtras" src="img/js-badge.svg" alt="Verso da Carta">
+  	</div> 
+	</section>
+
+  <br>
+
+  <!-- Botão centralizado -->
+  <center>
+    <button name="botaoResetar" class="botaoResetar">Resetar</button>
+  </center>
+
+  <script src="./scripts.js"></script>
+</body>
+
+<!-- Rodape -->
+<footer>
+
+  <br>
+
+  <!-- classe para criar a sombra do rodape -->
+  <div class="sombraRodape"></div>
+   
+  <!-- classe do rodape, e para o texto que vai ser colocando com um link   -->
+  <div class="rodape">
+    Baseado no 
+    <a href="https://medium.com/code-sketch/jogo-da-memoria-em-vanilla-javascript-6129e5eac7a5" style="color: #F90065" target='_blank'>
+      programa da Marina Ferreira
+    </a>
+    .
+  </div>
+
+</footer>
+
+</html>
